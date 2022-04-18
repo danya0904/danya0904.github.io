@@ -249,6 +249,30 @@ section{
 	color: #fff;
 	flex: 0 0 auto;
 }
+
+/*404*/
+
+.page__404{
+	font-size: 100px;
+	text-align: center;
+	margin-top: 100px;
+	padding-bottom: 510px;
+	padding-top: 10px;
+}
+
+.wrp__404{
+	margin-top: 330px;
+}
+
+.s0{
+	color: #f77400;
+	margin-top: -50px;
+}
+
+.p__404{
+	font-weight: 600;
+}
+
 /*responsive*/
 
 @media screen and (max-width: 1200px){

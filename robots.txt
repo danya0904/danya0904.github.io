@@ -1,5 +1,3 @@
 User-agent: *
 Disallow: /css
 Disallow: /js
-Host: 
-Sitemap: http:///sitemap.xml

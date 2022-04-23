@@ -13,8 +13,6 @@
 body {
 	color: #201b2d;
 	font-size: 20px;
-	padding: 0 auto;
-	margin: 0 auto;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	background: #f1f1f1;
@@ -28,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 900;
-	font-size: 2em;
 }
 
 p{
@@ -87,10 +84,8 @@ section{
 .wrapper{
 	justify-content: center; 
 	display: flex;
-	margin: 0 auto;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	width: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .logo{
@@ -120,6 +115,7 @@ section{
 
 /*about__me*/
 
+
 .h__wrp__2{
 	margin-top: 200px;
 }
@@ -137,73 +133,81 @@ section{
 	color: #f2892b
 }
 
+.h1__1{
+	font-size: 35px;
+}
+
 /*skill*/
 
 .skill{
-	display: block;
-	margin: 0 auto;
-
-}
-
-.h__card, .p__card, .img__card{
-	text-align: center;
-	margin: 0 auto;
-	display: block;
-}
-
-.h__card{
-	font-size: 30px;
-	font-weight: 600;
-	margin-top: 15px;
-}
-
-.p__card{
-	font-size: 25px;
-	font-weight: 500;
-}
-
-.wrapper__skill{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 60px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.card__skill{
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.card__skill > img{
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0 auto;
+}
+
+.card__h{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.card__p{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 25px;
+	width: auto;
+}
+
+.h1__2{
+	font-size: 35px;
 }
 
 /*portfolio*/
 
-.card__img, .card__h{
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.card__h{
-	margin-top: 15px;
-}
-
-.card__img{
-	width: 380px;
-	height: 280px;
-}
-
-.portfolio__card{
-	transition: ease 0.8s;
-}
-
-.portfolio__card:hover{
-	transform: scale(1.1);
-}
-
-.portfolio{
+.wrapper__protfolio{
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
-.wrp__portfolio{
-	display: flex;
-	justify-content: ceter;
-	width: auto;
-	margin-top: 30px;
+.card > img{
+	width: 300px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
 
+.h1__3{
+	font-size: 35px;
+}
+
+.wrp__card{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+}
+
+.card{
+	margin-left: 50px;
+	transition: all ease 0.8s;
+}
+
+.card:hover{
+	transform: scale(1.1);
 }
 
 /*form*/
@@ -213,26 +217,26 @@ section{
 	padding-bottom: 100px;
 }
 
-.cont__card{
+.wrp__card{
+	margin-top: 30px;	
+}
+
+.card__form{
 	display: flex;
-	justify-content: space-between;
-	margin-top: 35px;
-	width: 300px;
+	flex-direction: column;
 }
 
-.img__cont{
-	transition: all ease 0.8s;
+.card__form > img{
+	width: 150px;
+	height: 150px;
+	display: block;
+	margin: 0 auto;
 }
 
-.img__cont:hover{
-	transform: scale(1.1);
-}
-
-.p__contact{
+.card__form > a{
+	text-align: center;
+	margin-top: 30px;
 	font-size: 30px;
-	font-weight: 600;
-	margin-top: 50px;
-	margin-left: 50px;
 }
 
 /*footer*/
@@ -252,7 +256,7 @@ section{
 
 /*404*/
 
-.page__404{
+.page__404{	
 	font-size: 100px;
 	text-align: center;
 	margin-top: 100px;
@@ -288,15 +292,33 @@ section{
 		width: 100%;
 	}
 
-	.card__img{
-		width: 250px;
-		height: 175px;
-	}
-
 	.wrp__portfolio{
 		flex-direction: column;
 		margin-top: 30px
 	}
+
+		.card > img{
+		width: 250px;
+		height: 180px;
+	}
+
+	.card > a{
+		font-size: 25px;
+	}
+
+	.card__form > img{
+		width: 100px;
+		height: 100px
+	}
+
+	.card__form > a{
+		font-size: 25px;
+	}
+
+
+
+
+
 }
 
 @media screen and (max-width: 992px){
@@ -372,7 +394,30 @@ section{
 
 	.img__card{
 		width: 75px;
-		height: 75px
+		height: 75px;
+	}
+
+	.card__skill > img{
+		width: 125px;
+		height: 100px
+	}
+
+	.card__skill{
+		margin-left: 50px;
+		margin-right: 0
+	}
+
+	.card{
+		margin-left: 30px
+	}
+
+	.card > img{
+		width: 200px;
+		height: 175px
+	}
+
+	.card__form > a{
+		font-size: 17px;
 	}
 
 }
@@ -381,12 +426,13 @@ section{
 	.container{
 		width: 100%;
 		margin: 0 auto;
-		padding-right: 30px;
-		padding-left: 30px
+		padding-right: 60px;
+		padding-left: 60px
 	}
 
 	.txt{
 		font-size: 20px;
+		text-align-last: left
 	}
 
 	.card__img{
@@ -403,51 +449,38 @@ section{
 		height: 60px
 	}
 
-	.form, .portfolio, .skill{
+	section, header{
 		padding-top: 25px;
 		padding-bottom: 25px
 	}
 
-	.wrp__txt__form{
-		margin-top: -100px
+	h1{
+		text-align: center
 	}
 
-	.img__card{
-		width: 75px;
-		height: 50px;
+	.skill{
+		display: flex;
+		flex-direction: column;
 	}
 
-	.h__card{
-		font-size: 20px;
+	.card__skill{
+		margin-top: 35px
 	}
 
-	.p__card{
-		font-size: 15px;
+	.wrp__card{
+		display: flex;
+		flex-direction: column;
 	}
 
-	span > .img__card{
-		height: 60px;
-		width: 40px
+	.card{
+		margin-top: 35px
 	}
 
-	.card__img{
-		width: 185px;
-		height: 80px
+	.card__form{
+		padding-top: 35px
 	}
 
-	.isom{
-		width: 200px;
-		height: 150px
-	}
-
-	.img__cont{
-		width: 100px;
-		height: 100px
-	}
-	.p__contact{
-		font-size: 20px;
-		margin-top: 30px
-	}
+	
 }
 
 @media screen and (max-width: 480px){
@@ -590,7 +623,8 @@ section{
 	}
 
 	h1{
-		font-size: 16px;
+		font-size: 30px;
+		text-align: center
 	}
 
 	p{

@@ -1,0 +1,1 @@
+importScripts('https://push4site.com/static/sw/danya0904githubio.js');

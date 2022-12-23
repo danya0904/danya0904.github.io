@@ -341,12 +341,12 @@ button:hover{
 		gap: 30px;
 	}
 	h1{
-		font-size: 64px;
+		font-size: 58px;
 		-ms-align-items: center;
 		align-items: center;
 	}
 	h2{
-		font-size: 52px;
+		font-size: 48px;
 		text-align: center;
 	}
 	.card{
@@ -371,8 +371,8 @@ button:hover{
 		justify-content: center;
 	}
 	.card > img{
-		width: 400px;
-		height: 280px;
+		width: 380px;
+		height: 260px;
 		margin: 0 auto;
 	}
 	.box-2{

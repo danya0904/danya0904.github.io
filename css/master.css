@@ -371,7 +371,7 @@ button:hover{
 		justify-content: center;
 	}
 	.card > img{
-		width: 380px;
+		width: auto;
 		height: 260px;
 		margin: 0 auto;
 	}
@@ -381,8 +381,9 @@ button:hover{
 		flex-direction: column;
 	}
 	.box-2 > img{
-		width: 400px;
-		height: 400px;
+		width: 390px;
+		height: 390px;
+		margin: 0 auto;
 	}
 	.txt-2{
 		text-align: center;
@@ -425,5 +426,14 @@ button:hover{
 		-ms-align-items: center;
 		align-items: center;
 		gap: 30px;
+	}
+	
+	.clients > container > a{
+		text-aling: center;
+		margin: 0 auto;
+	}
+	
+	.clients > container > a > button{
+		margin: 0 auto;
 	}
 }

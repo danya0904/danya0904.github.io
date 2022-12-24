@@ -17,6 +17,22 @@ body{
 	animation: txt 3s 1;
 }
 
+button{
+	transition: all ease 0.5s;
+	color: #2A1842;
+	font-size: 24px;
+	font-weight: 600;
+	text-decoration: none;
+	cursor: pointer;
+	width: 300px;
+	height:100px;
+	border-style: none;
+	background: -webkit-linear-gradient(bottom left, rgb(189, 0, 255), rgb(255, 153, 0));
+	background: -o-linear-gradient(bottom left, rgb(189, 0, 255), rgb(255, 153, 0));
+	background: linear-gradient(to top right, rgb(189, 0, 255), rgb(255, 153, 0));
+	border-radius: 999px;
+}
+
 .container{
 	width: 1200px;
 	margin: 0 auto;

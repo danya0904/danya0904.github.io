@@ -233,7 +233,7 @@ h3 span{
 	align-items: center;
 }
 
-.btn button{
+.clients .container button a{
 	width: 330px;
 	height: 105px;
 	margin-left: 71px;
@@ -246,7 +246,7 @@ h3 span{
 	background: linear-gradient(to top right, rgb(255, 153, 0), rgb(189, 0, 255));
 }
 
-.btn button a{
+.clients .container a{
 	color: #2A1842;
 	font-size: 24px;
 	font-weight: 600;
